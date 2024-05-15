@@ -1,0 +1,26 @@
+<svg version="1.1" viewBox="0 0 81.83 110.59" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <radialGradient id="paper-shadow-gradient" cx="55.58" cy="29.83" r="35" fx="80.58" fy="5.83" gradientTransform="matrix(.80002 -.00067782 .00076905 .90769 11.092 2.7912)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#202020" stop-opacity=".2" offset="0"/>
+   <stop stop-color="#202020" stop-opacity=".12" offset=".19"/>
+   <stop stop-color="#202020" stop-opacity=".06" offset=".42"/>
+   <stop stop-color="#202020" stop-opacity=".01" offset=".68"/>
+   <stop stop-color="#202020" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <linearGradient id="corner-shadow-gradient" x1="61.737" x2="73.471" y1="24.742" y2="12.467" gradientTransform="scale(.93808 1.066)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#202020" stop-opacity="0" offset="0"/>
+   <stop stop-color="#202020" stop-opacity=".023593" offset=".52"/>
+   <stop stop-color="#202020" stop-opacity=".04" offset=".7"/>
+   <stop stop-color="#202020" stop-opacity=".07" offset=".84"/>
+   <stop stop-color="#202020" stop-opacity=".18" offset=".94"/>
+   <stop stop-color="#202020" stop-opacity=".25" offset="1"/>
+  </linearGradient>
+ </defs>
+ <title>png-file</title>
+ <path id="paper-white" d="m81.73 29.79-26.18-29.73h-42.55a13 13 0 0 0-13 12.94v84.63a13 13 0 0 0 13 13h55.88a13 13 0 0 0 13-13z" fill="#fff"/>
+ <path id="paper-shadow" d="m81.73 29.79-26.18-29.73h-42.55a13 13 0 0 0-13 12.94v84.63a13 13 0 0 0 13 13h55.88a13 13 0 0 0 13-13z" fill="url(#paper-shadow-gradient)"/>
+ <path id="corner-white" d="m55.58 0 0.6 22.13a6.09 6.09 0 0 0 6.09 6.08l19.56 1.62z" fill="#fff"/>
+ <path id="corner-shadow" d="m55.58 0 0.6 22.13a6.09 6.09 0 0 0 6.09 6.08l19.56 1.62z" fill="url(#corner-shadow-gradient)"/>
+ <path id="icon" d="m 16.57,60.7 a 0.6,0.6 0 0 0 0.06,0.11 l 0.06,0.1 0.1,0.09 h 0.06 l 25.44,14.81 h 0.05 v 0 a 0.56,0.56 0 0 0 0.44,0 h 0.06 v 0 L 65,62.57 v 0 a 0.28,0.28 0 0 0 0.1,-0.09 0.72,0.72 0 0 0 0.12,-0.21 v -0.12 c 0,0 0,-0.05 0,-0.08 v -5.19 0 a 0.57,0.57 0 0 0 0,-0.22 c 0,0 0,0 0,0 a 0.59,0.59 0 0 0 -0.13,-0.18 v 0 L 64.96,56.38 39.57,41.56 a 0.67,0.67 0 0 0 -0.66,0 L 16.85,54.81 16.73,54.9 v 0 a 0.57,0.57 0 0 0 -0.12,0.18 c 0,0 0,0 0,0 a 0.8,0.8 0 0 0 0,0.21 v 0 5.13 c 0,0 0,0.06 0,0.08 a 0.59,0.59 0 0 0 -0.04,0.2 z m 11,-10.82 12.92,-0.05 1.37,7.91 -4.63,0.26 a 0.32,0.32 0 0 0 0,0.64 l 7.37,-0.43 1.68,7.72 -23.1,-13.42 z M 64,58 v 3.64 L 48,71.29 V 67.65 Z M 47.35,71.67 43.26,74.13 V 70.49 L 47.35,68 Z M 42,70.5 v 3.64 l -24.15,-14 v -3.66 z m -2.75,-27.64 24.17,14 -16.07,9.67 -0.27,-0.16 -1.87,-8.56 a 0.32,0.32 0 0 0 -0.33,-0.25 l -2.4,0.14 -1.42,-8.25 a 0.32,0.32 0 0 0 -0.32,-0.27 v 0 l -12.11,0.06 z m -16.7,10 24.17,14 -4.11,2.47 -24.17,-14 z" fill="#202020"/>
+ <text id="label" transform="rotate(-.12)" x="12.07291" y="98.885506" fill="#202020" font-family="sans-serif" font-size="12.27px" font-weight="700">.jpg</text>
+</svg>

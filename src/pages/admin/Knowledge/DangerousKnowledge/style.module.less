@@ -1,0 +1,108 @@
+.container {
+  :global {
+    .ant-image {
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.step {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #42adfa;
+  border-radius: 50%;
+  font-weight: 800;
+  color: #fff;
+  font-size: 20px;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+}
+
+.deleteContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.status_selector {
+  margin-bottom: 20px;
+  width: 95%;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.title {
+  font-weight: 800;
+}
+
+.reasonInput {
+  height: 150px !important;
+}
+
+.editorPic {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.refresh {
+  margin-bottom: 25px;
+  margin-right: 2rem;
+}
+
+.redBtn {
+  color: #fff !important;
+  background-color: #f84242;
+  color: #fff;
+  &:hover {
+    border: 1px solid #efecec !important;
+    background-color: #ff0000 !important;
+    color: #fff !important;
+  }
+}
+
+.blueBtn {
+  color: #fff !important;
+  background-color: deepskyblue;
+  &:hover {
+    background-color: #009fff !important;
+    border: 1px solid #efecec !important;
+    color: #fff !important;
+  }
+  &:disabled {
+    background-color: #9fdeff;
+    &:hover {
+      background-color:#9fdeff !important;
+    }
+  }
+}
+
+:global {
+  .ant-table-wrapper{
+    max-width: 95% !important;
+    .ant-table-thead {
+      .ant-table-cell {
+        font-weight: 600 !important;
+        color: #646464 !important;
+      }
+    }
+    .ant-table-cell {
+      color: #363636 !important;
+      font-weight: 400 !important;
+      font-family: "思源黑体 Light";
+    }
+  }
+
+}

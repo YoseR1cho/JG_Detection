@@ -1,0 +1,92 @@
+.btnContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.search_container {
+  display: inline-block;
+  width: 50%;
+  input {
+    display: inline-block;
+    width: 27% !important;
+    margin-right: 1.5rem;
+  }
+  button {
+    display: inline-block;
+  }
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+}
+
+.myImg {
+  width: 150px;
+  height: 150px;
+}
+
+.title {
+  font-size: 16px;
+}
+
+.href {
+  color: #19a23a;
+
+  &:hover {color: #4de871;}
+}
+
+.editorPic {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.refresh {
+  margin-bottom: 25px;
+  margin-right: 2rem;
+}
+
+.redBtn {
+  color: #fff !important;
+  background-color: #f84242;
+  color: #fff;
+  &:hover {
+    border: 1px solid #efecec !important;
+    background-color: #ff0000 !important;
+    color: #fff !important;
+  }
+}
+
+.blueBtn {
+  color: #fff !important;
+  background-color: deepskyblue;
+  &:hover {
+    background-color: #009fff !important;
+    border: 1px solid #efecec !important;
+    color: #fff !important;
+  }
+  &:disabled {
+    background-color: #9fdeff;
+    &:hover {
+      background-color:#9fdeff !important;
+    }
+  }
+}
+
+:global {
+  .ant-table-wrapper{
+    max-width: 95% !important;
+    .ant-table-thead {
+      .ant-table-cell {
+        font-weight: 600 !important;
+        color: #646464 !important;
+      }
+    }
+    .ant-table-cell {
+      color: #363636 !important;
+      font-weight: 400 !important;
+      font-family: "思源黑体 Light";
+    }
+  }
+
+}

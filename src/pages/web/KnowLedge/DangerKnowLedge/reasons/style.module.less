@@ -1,0 +1,89 @@
+.overall{
+    width: 800px;
+    .title{
+        font-size: 48px;
+        font-weight: 400;
+        margin: 40px auto;
+        text-align: center;
+    }
+    .banner {
+        min-height: 500px;
+        background-color: #fff;
+        border-radius: 10px;
+        .navigate {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #dedede;
+
+            .classify {
+                box-sizing: border-box;
+                display: flex;
+                &>div {
+                    height: 40px;
+                    line-height: 60px;
+                    margin-left: 2rem;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    transition: .3s all;
+                    &:hover {
+                        color: #1e80ff;
+                    }
+                }
+            }
+            .supply {
+                margin-right: 2rem;
+            }
+
+            .active {
+                color: #1e80ff;
+                border-bottom: 1px solid #1e80ff;
+            }
+        }
+        :global {
+            .ant-list-item-meta-title {
+                a {
+                    font-size: 18px;
+                    font-family: "思源黑体 Light";
+                }
+            }
+            .ant-list-item {
+                padding: 20px 40px !important;
+                transition: .3s all;
+                border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+                &:hover {
+                    background-color: #f7f8fa;
+                }
+            }
+        }
+    }
+    // .alert{
+    //     // display: none;
+    // }
+    .content{
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid rgb(221, 212, 212);
+    }
+}
+
+
+:global{
+    .ant-collapse-content-box{
+        background-color: #F5F5FA;
+    }
+    .ant-form-horizontal{
+        margin:10px auto
+    }
+}
+
+
+.img{
+    width: 240px;
+    height: 188px;
+}
+
+.text{
+    font-size: 15px;
+}

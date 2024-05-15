@@ -1,0 +1,68 @@
+.mask {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 700px;
+    margin-top: 40px;
+    background-color: #fff;
+  }
+}
+
+.container{
+  width: 85%;
+  height: 65% !important;
+  margin-bottom: 5%;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 40px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  border: 1px solid #cccccc;
+
+  label {
+    font-size: 24px;
+    margin:0 1rem;
+    cursor: pointer;
+  }
+  input {
+    display: block;
+    height: 100%;
+    flex:1;
+    font-size: 16px;
+    margin-right: 1rem;
+    border: none;
+    background: transparent;
+  }
+}
+
+:global {
+  .ant-input-group-wrapper {
+    width: 70% !important;
+    margin-bottom: 1%;
+  }
+  .ant-input {
+    width: 100% !important;
+
+  }
+}

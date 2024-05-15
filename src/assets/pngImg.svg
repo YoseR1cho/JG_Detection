@@ -1,0 +1,26 @@
+<svg version="1.1" viewBox="0 0 81.83 110.59" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <radialGradient id="paper-shadow-gradient" cx="55.58" cy="29.83" r="35" fx="80.58" fy="5.83" gradientTransform="matrix(.80002 -.00067782 .00076905 .90769 11.092 2.7912)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#202020" stop-opacity=".2" offset="0"/>
+   <stop stop-color="#202020" stop-opacity=".12" offset=".19"/>
+   <stop stop-color="#202020" stop-opacity=".06" offset=".42"/>
+   <stop stop-color="#202020" stop-opacity=".01" offset=".68"/>
+   <stop stop-color="#202020" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <linearGradient id="corner-shadow-gradient" x1="61.737" x2="73.471" y1="24.742" y2="12.467" gradientTransform="scale(.93808 1.066)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#202020" stop-opacity="0" offset="0"/>
+   <stop stop-color="#202020" stop-opacity=".023593" offset=".52"/>
+   <stop stop-color="#202020" stop-opacity=".04" offset=".7"/>
+   <stop stop-color="#202020" stop-opacity=".07" offset=".84"/>
+   <stop stop-color="#202020" stop-opacity=".18" offset=".94"/>
+   <stop stop-color="#202020" stop-opacity=".25" offset="1"/>
+  </linearGradient>
+ </defs>
+ <title>png-file</title>
+ <path id="paper-white" d="m81.73 29.79-26.18-29.73h-42.55a13 13 0 0 0-13 12.94v84.63a13 13 0 0 0 13 13h55.88a13 13 0 0 0 13-13z" fill="#fff"/>
+ <path id="paper-shadow" d="m81.73 29.79-26.18-29.73h-42.55a13 13 0 0 0-13 12.94v84.63a13 13 0 0 0 13 13h55.88a13 13 0 0 0 13-13z" fill="url(#paper-shadow-gradient)"/>
+ <path id="corner-white" d="m55.58 0 0.6 22.13a6.09 6.09 0 0 0 6.09 6.08l19.56 1.62z" fill="#fff"/>
+ <path id="corner-shadow" d="m55.58 0 0.6 22.13a6.09 6.09 0 0 0 6.09 6.08l19.56 1.62z" fill="url(#corner-shadow-gradient)"/>
+ <path id="icon" d="m66.5 55.49a0.28 0.28 0 0 0 0-0.13 0.21 0.21 0 0 0 0-0.06 0.65 0.65 0 0 0-0.19-0.18l-25.59-14.77a0.58 0.58 0 0 0-0.57 0l-17 9.82a0.35 0.35 0 0 0-0.21 0.12l-6.15 3.56a0.65 0.65 0 0 0-0.16 0.13v5.16a0.56 0.56 0 0 0 0.29 0.49l25.5 14.73a0.58 0.58 0 0 0 0.28 0.07 0.59 0.59 0 0 0 0.29-0.07l23.23-13.36a0.56 0.56 0 0 0 0.29-0.49v-4.95a0.17 0.17 0 0 0-0.01-0.07zm-26.06-14 24.37 14.07-9.39 5.44-6.55 3.79-3.87-2.25a9.58 9.58 0 0 0 3.13-1.08 3.88 3.88 0 0 0 2.28-3.22 3.89 3.89 0 0 0-2.32-3.24 9.54 9.54 0 0 0-3-1.05l2.12-4.56a0.33 0.33 0 0 0 0-0.33 0.33 0.33 0 0 0-0.31-0.06l-15.46 2.35a0.32 0.32 0 0 0-0.27 0.26 0.32 0.32 0 0 0 0.15 0.34l5.81 3.36a4.2 4.2 0 0 0-1.6 1.85l-11.18-6.38zm-4.44 16.66 6.89 3.93a10.05 10.05 0 0 1-4.94-1.18 3.27 3.27 0 0 1-1.95-2.66zm0.14-0.67a3.72 3.72 0 0 1 1.66-1.81l4.89 2.82a0.29 0.29 0 0 0 0.16 0h0.1a0.33 0.33 0 0 0 0.19-0.18l1.75-3.77a9.17 9.17 0 0 1 2.92 1 3.28 3.28 0 0 1 1.95 2.66 3.27 3.27 0 0 1-1.95 2.66 9.42 9.42 0 0 1-3.76 1.14zm8.08-3-1.52 3.27-4.23-2.44-0.67-0.39-5.32-3.07 14-2.16-1.94 4.18zm-20.52-3.32 11.65 6.64a2.18 2.18 0 0 0 0 0.44 3.88 3.88 0 0 0 2.27 3.22 10.74 10.74 0 0 0 5.26 1.26h1l4.33 2.47-5.65 3.21-11.23-6.48-13.14-7.58zm-6.07 4.16 24.37 14.07v3.61l-24.37-14.09zm25.5 16.47v-2.4l5.51-3.18v3.61l-5.51 3.18zm22.24-11.65-16.11 9.3v-3.61l16.08-9.29z" fill="#202020"/>
+ <text id="label" transform="rotate(-.12)" x="12.07291" y="98.885506" fill="#202020" font-family="sans-serif" font-size="12.27px" font-weight="700">.png</text>
+</svg>

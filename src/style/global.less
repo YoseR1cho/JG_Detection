@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: "思源黑体 Light";
+  font-weight: 300;src: url("//at.alicdn.com/wf/webfont/H6Adi8lnsMv2/dyNmIvfcUy3u.woff2") format("woff2"),
+url("//at.alicdn.com/wf/webfont/H6Adi8lnsMv2/GPUkA0Y31Uao.woff") format("woff");
+  font-display: swap;
+}
+
+html,
+body
+{
+  width: 100%;
+  height: 100%;
+  scroll-behavior:smooth;
+}
+
+#root {
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(22, 22, 22);
+  font-family: "思源黑体 Light";
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  background: no-repeat #F5F5FA;
+}
+
+button {
+  border: none;
+}
+
+.amap-logo{
+  display: none;
+  opacity:0 !important;
+}
+.amap-copyright {
+  opacity:0;
+}
+
+.amap-sug-result { z-index: 1050; }
+
+.auto-item {
+  font-size: 15px!important;
+}
+
+.redBtn {
+  color: #fff !important;
+  background-color: #f84242;
+  color: #fff;
+  &:hover {
+    border: 1px solid #efecec !important;
+    background-color: #ff0000 !important;
+    color: #fff !important;
+  }
+}
+
+.blueBtn {
+  color: #fff !important;
+  background-color: deepskyblue;
+  &:hover {
+    background-color: #009fff !important;
+    border: 1px solid #efecec !important;
+    color: #fff !important;
+  }
+  &:disabled {
+    background-color: #9fdeff;
+    &:hover {
+      background-color:#9fdeff !important;
+    }
+  }
+}
+
+.greenBtn {
+  color: #fff !important;
+  background-color: #00c700;
+
+  &:hover {
+    background-color: #00ee00 !important;
+    border: 1px solid #efecec !important;
+    color: #fff !important;
+  }
+  &:disabled {
+    background-color: #9fff9f;
+    &:hover {
+      background-color: #9fff9f !important;
+    }
+  }
+}
+
+.ant-modal-content {
+  border-radius: 0 !important;
+}
+
+.ant-table-thead {
+  .ant-table-cell {
+    text-align: center !important;
+  }
+}
+
+.ant-modal-title {
+  font-size: 20px !important;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #cccccc;
+}
+
+

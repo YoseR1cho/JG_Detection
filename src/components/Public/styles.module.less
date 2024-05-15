@@ -1,0 +1,150 @@
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .input:valid+label,
+  .input:focus + label {
+    top: -9px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: deepskyblue;
+  }
+  ::placeholder {
+    color: transparent;
+  }
+}
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 70%;
+  margin-bottom: 7%;
+}
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  padding-left: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 7px;
+  font-size: 16px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+.label {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: rgba(0,0,0,0);
+  color: #000;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+.btn {
+  width: 20%;
+  margin: auto;
+}
+
+
+.error {
+  transform: translateY(-100%);
+  color: #e72800;
+}
+
+.erroricon {
+  margin-right: 0.5rem;
+  color: red;
+}
+
+.switch,
+.forget
+{
+  color: #464646;
+  cursor: pointer;
+  transition: .2s all;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.switch {
+  margin-right: 2rem;
+}
+
+
+.verification {
+  width: 70%;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  width: 92px;
+  height: 41px;
+  padding: 10px 30px;
+  margin: 30px 0;
+  border: none;
+  background-color: deepskyblue;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all .3s;
+  &:hover {
+    background-color: #00a6ff;
+  }
+}
+
+.circular {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 36px;
+  bottom: 6%;
+  animation: rotate 2s linear infinite;
+  .path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke: #000;
+    animation: dash 1.5s ease-in-out infinite
+  }
+}
+
+
+@media screen and (max-width: 1000px ){
+  .label {
+    font-size: 14px;
+  }
+}
+

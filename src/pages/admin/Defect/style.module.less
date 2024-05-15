@@ -1,0 +1,280 @@
+.main {
+  :global {
+    .ant-table-wrapper{
+      width: 95% !important;
+      .ant-table-cell {
+        color: #363636 !important;
+        font-weight: 400 !important;
+        font-family: "思源黑体 Light";
+      }
+    }
+
+    .ant-form-item {
+      margin-bottom: 50px !important;
+      label {
+        font-size: 16px !important;
+        color: #575757 !important;
+      }
+    }
+  }
+}
+
+.select {
+  position: relative;
+  left: 50%;
+  margin: 20px auto;
+  transform: translateX(-50%);
+}
+
+.container {
+  width: 80%;
+  background-color: #fff;
+  margin: 30px auto;
+  color: #e6d70d;
+  padding-bottom: 40px;
+
+  h2 {
+    font-size: 34px;
+    font-weight: 600;
+    padding-top:  25px;
+    margin-left: 2rem;
+  }
+
+  img {
+    display: block;
+    width: 50%;
+    height: 300px;
+    margin: 50px auto -30px auto;
+  }
+
+  .data_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    width: 100%;
+    margin: 50px auto;
+    &>div {
+      margin-top: 80px;
+      .des {
+        color: #4f4f4f;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .data {
+        color: #6e6e6e;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 1.5rem;
+      }
+    }
+    .big {
+      width: 70%;
+      padding-right: 1rem;
+      padding-left: 20%;
+      /*.des {
+        margin-left: 25%;
+      }*/
+    }
+    .small {
+      width: 30%;
+    }
+    .map {
+      width: 70%;
+      height: 350px;
+      margin: 70px auto;
+
+      :global {
+        .amap-icon{
+
+          overflow:inherit !important;
+
+        }
+      }
+    }
+  }
+}
+.btn_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  button {
+    cursor: pointer;
+    padding: 0 1rem;
+    height: 40px;
+    border-radius: 10px;
+    transition: .3s all;
+  }
+}
+
+
+.btnContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.form {
+  margin-top: 50px ;
+}
+.auditContainer {
+  width: 80%;
+  background-color: #fff;
+  margin: 60px auto;
+
+  h2 {
+    font-size: 34px;
+    font-weight: 600;
+    padding-top:  25px;
+    margin-left: 2rem;
+  }
+
+  img {
+    display: block;
+    width: 50%;
+    height: 300px;
+    margin: 50px auto 30px auto;
+  }
+
+  .repairedPic {
+    margin-bottom: 50px
+  }
+
+}
+
+.advice_item {
+  label {
+    font-size: 16px !important;
+    font-weight: 600;
+  }
+}
+
+
+
+.delivery_box,
+.delivery_btn_container
+{
+  width: 80% !important;
+  margin: 0 auto;
+}
+
+.delivery_box {
+  margin-top: 50px;
+  button {
+    padding:0 1.5rem;
+  }
+}
+
+.deliver_table {
+  margin: 30px auto 20px auto !important;
+}
+
+.delivery_btn_container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  button {
+    padding:0 1.2rem;
+  }
+}
+.search_container {
+  margin-bottom: 25px;
+  input {
+    width: 200px !important;
+  }
+
+  button {
+    margin-left: 30px;
+    display: inline-block;
+  }
+}
+
+.status_selector {
+  margin-bottom: 20px;
+  width: 95%;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.greenBtn {
+  color: #fff !important;
+  background-color: #00c700;
+
+  &:hover {
+    background-color: #00ee00 !important;
+    border: 1px solid #efecec !important;
+    color: #fff !important;
+  }
+  &:disabled {
+    background-color: #9fff9f;
+    &:hover {
+      background-color: #9fff9f !important;
+    }
+  }
+}
+
+.blueBtn {
+  color: #fff !important;
+  background-color: deepskyblue;
+  &:hover {
+    background-color: #009fff !important;
+    border: 1px solid #efecec !important;
+    color: #fff !important;
+  }
+  &:disabled {
+    background-color: #9fdeff;
+    &:hover {
+      background-color:#9fdeff !important;
+    }
+  }
+}
+
+.redBtn {
+  color: #fff !important;
+  background-color: #f84242;
+  color: #fff;
+  &:hover {
+    border: 1px solid #efecec !important;
+    background-color: #ff0000 !important;
+    color: #fff !important;
+  }
+}
+
+.mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+
+  img {
+    transition: all .3s;
+    cursor: pointer;
+    width: 950px;
+    height: 500px;
+    z-index: 9999;
+  }
+
+  @media screen and (max-width: 950px){
+    img {
+      width: 70%;
+    }
+  }
+  @media screen and (max-height: 500px){
+    img {
+      height: 60%;
+    }
+  }
+}
+
+.a {
+  font-weight: 600;
+  color: deepskyblue;
+  &:hover {
+    color: #006fff;
+  }
+}

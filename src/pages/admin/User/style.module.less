@@ -1,0 +1,261 @@
+.btnContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main {
+  .container {
+    border-radius: 12px;
+    width: 95%;
+    padding: 20px 1rem;
+    min-height: 560px;
+    background-color: #fff;
+  }
+  .refresh {
+    margin-bottom: 25px;
+    margin-right: 2rem;
+  }
+  .search_container {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 25px;
+    input {
+      display: inline-block;
+      width: 27% !important;
+      margin-right: 1.5rem;
+    }
+    button {
+      display: inline-block;
+    }
+  }
+
+  .top_wrapper {
+    display: flex;
+    gap:30px;
+    width: 95%;
+    height: 380px;
+
+    .todo {
+      width: 35%;
+      height: 340px;
+      background-color: #fff;
+      border-radius: 12px;
+
+      h2 {
+        font-size: 22px;
+        font-weight: 400;
+        margin-left: 2rem;
+        margin-top: 12px;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        height: 270px;
+        width: 90%;
+        margin:10px auto;
+
+        li {
+          height: 40%;
+          width: 40%;
+          background-color: #efefef;
+          h3 {
+            margin-left: 1rem;
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: 16px;
+            color: #7a7a7a;
+          }
+          div {
+            font-weight: 600;
+            width: 100%;
+            margin-top: 8px;
+            text-align: center;
+            font-size: 32px;
+            color: #159a84;
+          }
+        }
+      }
+    }
+
+  }
+
+  .bottom_wrapper {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    border-radius: 12px ;
+  }
+
+  .automation,
+  .charts {
+    display: inline-block;
+    border-radius: 12px;
+    background-color: #fff;
+    margin-bottom: 40px;
+  }
+
+  .charts {
+    width: 68%;
+    &>div {
+      width: 80%;
+      height: 300px;
+      margin: 20px auto;
+      div:first-of-type {
+        width: 100% !important;
+        canvas {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .automation {
+    width: 30%;
+    height: 340px;
+    text-align: center;
+
+    h2 {
+      display: block;
+      margin-top: 10px;
+      font-size: 30px;
+      color: #3476f1;
+    }
+
+    .info {
+      p {
+        margin-bottom: 10px;
+        color: #888888;
+        transition: .3s all;
+        &:hover {
+          color: #000000;
+        }
+      }
+    }
+
+    .active {
+      color: #3476f1 !important;
+    }
+    .switchBtn {
+      margin-top: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10%;
+      gap: 30px;
+      p {
+        font-size: 20px;
+        color: #cccccc;
+        transition: .3s all;
+      }
+
+    }
+  }
+  @media screen and (max-width: 950px){
+    .automation {
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  :global {
+    .ant-table-wrapper{
+      max-width: 95% !important;
+      .ant-table-thead {
+        .ant-table-cell {
+          font-weight: 600 !important;
+          color: #646464 !important;
+        }
+      }
+      .ant-table-cell {
+        color: #363636 !important;
+        font-weight: 400 !important;
+        font-family: "思源黑体 Light";
+      }
+    }
+  }
+}
+
+:global {
+  .ant-modal-content {
+    .ant-switch {
+      background-color: #ff2121 ;
+      &:hover {
+        background-color: #ff2121 !important;
+      }
+    }
+    .ant-switch-checked {
+      background-color: #008f00 !important;
+      &:hover {
+        background-color: #008f00 !important;
+      }
+    }
+  }
+}
+
+
+
+
+.redBtn {
+  color: #fff !important;
+  background-color: #f84242;
+  color: #fff;
+  &:hover {
+    border: 1px solid #efecec !important;
+    background-color: #ff0000 !important;
+    color: #fff !important;
+  }
+}
+
+.blueBtn {
+  color: #fff !important;
+  background-color: deepskyblue;
+  &:hover {
+    background-color: #009fff !important;
+    border: 1px solid #efecec !important;
+    color: #fff !important;
+  }
+  &:disabled {
+    background-color: #9fdeff;
+    &:hover {
+      background-color:#9fdeff !important;
+    }
+  }
+}
+
+.deleteContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inspector,
+.auditor,
+.repairman
+{
+  padding:1px 4px ;
+  color: #ffffff;
+}
+
+.inspector {
+  background-color: #009fff;
+}
+
+.auditor {
+  background-color: #00b900;
+}
+
+.repairman {
+  background-color: #ff8800;
+}
+
+
