@@ -1,5 +1,4 @@
 import {action, makeObservable, observable} from "mobx";
-import {request} from '@/utils/axios.js'
 
 class Delivery {
     deliveryList
@@ -17,8 +16,6 @@ class Delivery {
         this.deliveryList.push(item)
         console.log(this.deliveryList)
     }
-
-
 }
 
 export default new Delivery();

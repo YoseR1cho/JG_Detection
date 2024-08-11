@@ -22,7 +22,7 @@ const Block = ({id}) => {
     }
     return (
         <>
-            <Button className='redBtn' onClick={openHandler}>拉黑</Button>
+            <Button className='blueBtn' onClick={openHandler}>拉黑</Button>
             <Modal title='拉黑用户'
                    open={isOpen}
                    onCancel={()=>setOpen(false)}

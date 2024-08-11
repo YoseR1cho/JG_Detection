@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styles from '../../Defect/style.module.less'
 import {Button, Table, ConfigProvider, Input, Radio, Image, DatePicker, Form, message, Checkbox} from "antd";
-import Event from "@/store/Event.js";
+import Event from "@/store/knowledgeBase/Event.js";
 import {observer} from "mobx-react";
 import PicDemonstrator from "@/pages/admin/Defect/PicDemonstrator.jsx";
 import {SearchOutlined} from "@ant-design/icons";

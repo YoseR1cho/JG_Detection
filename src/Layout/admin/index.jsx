@@ -1,7 +1,8 @@
 import React, { useRef, useState} from 'react';
+import styles from './style.module.less'
+
 import {
     UserOutlined,
-    SmileOutlined,
     MenuUnfoldOutlined,
     MenuFoldOutlined,
     ScheduleOutlined,
@@ -15,11 +16,11 @@ import {
     CarryOutOutlined, BulbOutlined, HomeOutlined, SolutionOutlined, GoldOutlined
 } from '@ant-design/icons';
 import {Button, Layout, Menu, Spin, theme} from 'antd';
-import styles from './style.module.less'
 import {Outlet, useNavigate} from "react-router-dom";
 import avatar from "@/assets/矢量.png"
 import icon from "@/assets/icon.png"
-import User from "@/store/User.js";
+
+import {useStores} from "@/store/index.js"
 import {observer} from "mobx-react";
 import Breadcrumb from "@/Layout/admin/Breadcrumb.jsx";
 import useLogin from "@/utils/hooks/useLogin.js";
@@ -129,6 +130,7 @@ const App = (props) => {
         token: { colorBgContainer, borderRadiusLG },
     } = theme.useToken();
     const [collapsed, setCollapsed] = useState(false);
+    const {User} = useStores();
     const navigateTo = useNavigate();
     const {nickName} = User;
     const {loading} = useLogin(true);

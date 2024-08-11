@@ -5,7 +5,7 @@ import { useNavigate, useParams} from "react-router-dom";
 import {Button, Form, Input, message, Spin} from "antd";
 import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
-import Event from '@/store/Event.js'
+import Event from '@/store/knowledgeBase/Event.js'
 
 dayjs.locale('zh-cn');
 

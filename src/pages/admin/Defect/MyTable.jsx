@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styles from './style.module.less'
 import {Button, Table, ConfigProvider, Input, Radio, Image, DatePicker, Form} from "antd";
-import Event from "@/store/Event.js";
+import Event from "@/store/knowledgeBase/Event.js";
 import {observer} from "mobx-react";
 import {Navigate, useLocation, useNavigate} from "react-router-dom";
 import PicDemonstrator from "@/pages/admin/Defect/PicDemonstrator.jsx";
@@ -79,6 +79,10 @@ const MyTable = () => {
                 {
                     text:'井圈问题',
                     value:'井圈问题'
+                },
+                {
+                    text: '其他',
+                    value: ''
                 }
             ],
             onFilter:(value, record) => record.defectType?.indexOf(value) === 0,

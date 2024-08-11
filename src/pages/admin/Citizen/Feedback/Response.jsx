@@ -22,7 +22,7 @@ const Response = ({id,status,refresh}) => {
     }
     return (
         <>
-            {!status && <Button onClick={openHandler} className='blueBtn'>回复</Button>}
+            <Button onClick={openHandler} className='greenBtn' disabled={status}>回复</Button>
             <Modal title='意见回复'
                    open={isOpen}
                    onCancel={()=>setOpen(false)}

@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import styles from "../style.module.less";
 import {Button, Form, Input, Modal, Select, Upload} from "antd";
 import {formItemLayout} from "@/utils/config.js";
-import Reason from "@/store/Reason.js";
+import Reason from "@/store/knowledgeBase/Reason.js";
 import {normFile, picHandler} from "@/utils/index.js";
 import {PlusOutlined} from "@ant-design/icons";
-import Process from "@/store/Process.js";
+import Process from "@/store/knowledgeBase/Process.js";
 
 const ProcessModal = ({isAdd = true,data}) => {
     const [isOpen,setOpen] = useState(false)

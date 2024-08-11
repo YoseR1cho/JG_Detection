@@ -3,7 +3,6 @@ import axios from "axios";
 import Record from "@/store/Record.js";
 import {
     auditWorkSheet,
-    confirmWorkSheet,
     disposeWorkSheet,
     reAuditWorkSheet,
     receiveWorkSheet,
@@ -24,7 +23,8 @@ class Event {
     loadEventList(status){
         this.loading = true
         workSheetExpert(status).then(res=>{
-            this.eventList = res.data.records.filter(item=>item.inspectedInfo.match(/人:([^;]+)/)[1]!=='微信用户');
+            console.log(res.data.records);
+            this.eventList = res.data.records.filter(item=>item.instrumentType!=="手机移动端小程序");
             this.loading = false
         }).catch(e=>{
             console.log(e)
@@ -34,7 +34,7 @@ class Event {
     loadAppEventList(status){
         this.loading = true
         workSheetExpert(status).then(res=>{
-            this.eventList = res.data.records.filter(item=>item.inspectedInfo.match(/人:([^;]+)/)[1]==='微信用户');
+            this.eventList = res.data.records.filter(item=>item.instrumentType==="手机移动端小程序");
             this.loading = false
         }).catch(e=>{
             console.log(e)

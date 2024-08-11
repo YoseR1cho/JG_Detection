@@ -3,7 +3,7 @@ import { Table} from "antd";
 import styles from '../style.module.less'
 import {observer} from "mobx-react";
 import ProcessModal from "./ProcessModal.jsx";
-import Process from "@/store/Process.js";
+import Process from "@/store/knowledgeBase/Process.js";
 import DeleteModal from "@/pages/admin/Knowledge/DeleteModal.jsx";
 
 const Index = () => {

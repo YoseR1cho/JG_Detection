@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import styles from './style.module.less'
 import {observer} from "mobx-react";
 import {useLocation, useNavigate, useParams} from "react-router-dom";
-import Event from '@/store/Event.js'
+import Event from '@/store/knowledgeBase/Event.js'
 import { Spin } from "antd";
 import result from '@/assets/display2.jpg'
 import DetailMap from "@/components/DetailMap/index.jsx";

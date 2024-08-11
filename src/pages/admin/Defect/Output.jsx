@@ -7,7 +7,7 @@ import locale from 'antd/locale/zh_CN';
 import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
 import TextArea from "antd/es/input/TextArea.js";
-import Event from "@/store/Event.js";
+import Event from "@/store/knowledgeBase/Event.js";
 
 dayjs.locale('zh-cn');
 

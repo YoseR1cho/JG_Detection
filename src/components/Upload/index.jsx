@@ -1,12 +1,12 @@
 import React from 'react';
+
 import {Upload} from "antd";
 
-import Image from "@/store/Image.js";
-import State from "@/store/State.js";
 import {observer} from "mobx-react";
+import { useStores } from '../../store';
 
 const Index = ({children}) => {
-
+    const {Image,State} = useStores();
     const {setUrl,setName,setForm} = Image;
     const {setOpen} = State;
 

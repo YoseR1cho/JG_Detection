@@ -2,11 +2,11 @@ import React, {useState} from 'react';
 import {Button, message, Modal} from "antd";
 import styles from "@/pages/admin/User/style.module.less";
 import {deleteKnowledge} from "@/utils/api.js";
-import Reason from "@/store/Reason.js";
-import Feature from "@/store/Feature.js";
-import Process from "@/store/Process.js";
-import Matter from "@/store/Matter.js";
-import News from "@/store/News.js";
+import Reason from "@/store/knowledgeBase/Reason.js";
+import Feature from "@/store/knowledgeBase/Feature.js";
+import Process from "@/store/knowledgeBase/Process.js";
+import Matter from "@/store/knowledgeBase/Matter.js";
+import News from "@/store/knowledgeBase/News.js";
 
 const DeleteModal = ({id,text}) => {
     const [open,setOpen] = useState(false);

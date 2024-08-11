@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import styles from "@/pages/admin/Visualization/style.module.less";
 import * as echarts from 'echarts'
-import Event from '@/store/Event.js'
+import Event from '@/store/knowledgeBase/Event.js'
 import {observer} from "mobx-react";
 import {getRiskNum} from "@/utils/api.js";
 

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styles from "./style.module.less";
 import {Button, Form, Image, Input, Modal, Upload} from "antd";
 import {PlusOutlined} from "@ant-design/icons";
-import Matter from "@/store/Matter.js";
+import Matter from "@/store/knowledgeBase/Matter.js";
 import {normFile, picHandler} from "@/utils/index.js";
 
 const EditorModal = ({isAdd = true,data}) => {

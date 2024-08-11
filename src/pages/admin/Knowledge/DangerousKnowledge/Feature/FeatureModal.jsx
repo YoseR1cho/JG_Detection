@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styles from "../style.module.less";
 import {Button, Form, Input, Modal, Select, Upload} from "antd";
 import {formItemLayout} from "@/utils/config.js";
-import Feature from "@/store/Feature.js";
+import Feature from "@/store/knowledgeBase/Feature.js";
 import {normFile, picHandler} from "@/utils/index.js";
 import {PlusOutlined} from "@ant-design/icons";
 
@@ -52,7 +52,7 @@ const EditorModal = ({isAdd = true,data}) => {
             <Modal title={isAdd?"新增特征":'编辑特征'}
                    open={isOpen}
                    onCancel={()=>setOpen(false)}
-                   footer={<></>}
+                   footer={null}
                    destroyOnClose={true}
                    maskClosable={false}
             >

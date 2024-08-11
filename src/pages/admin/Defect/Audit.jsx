@@ -1,14 +1,14 @@
 import React, {useEffect, useRef, useState} from 'react';
 import styles from './style.module.less'
 import {observer} from "mobx-react";
-import { useNavigate, useParams} from "react-router-dom";
+import {useLocation, useNavigate, useParams} from "react-router-dom";
 import {Button, Checkbox, ConfigProvider, DatePicker, Form, Input, message, Select, Spin} from "antd";
 import locale from 'antd/locale/zh_CN';
 import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
 import TextArea from "antd/es/input/TextArea.js";
 import { deleteWorkSheet} from "@/utils/api.js";
-import Event from '@/store/Event.js'
+import Event from '@/store/knowledgeBase/Event.js'
 
 dayjs.locale('zh-cn');
 
@@ -18,7 +18,10 @@ const Confirm = () => {
     const params = useParams()
     const [form] = Form.useForm()
     const navigate = useNavigate();
+    const [other,setOther] = useState(false)
     const {auditEvent,eventList,loading} = Event
+
+
     useEffect(() => {
         if(eventList.length>0){
             setData(eventList.find(item=>item.id===params.id))
@@ -33,7 +36,7 @@ const Confirm = () => {
         const date = dayjs(values.date).format('YYYY-MM-DD HH:mm:ss')
         const {advice,ifUrgent,riskLevel,defectType} = values;
 
-        await auditEvent({id:params.id,date:date,advice,ifUrgent,riskLevel,defectType});
+        await auditEvent({id:params.id,date:date,advice,ifUrgent,riskLevel,defectType:other?values.other:defectType});
         message.success('审核成功，待派送')
         navigate(`/admin/defect/inspect/delivery/${params.id}`)
         // await auditWorkSheet({date,eventName,advice,isUrgent,id:data.id});
@@ -114,35 +117,65 @@ const Confirm = () => {
                                 width: 150,
                             }}
                             placeholder='请调整隐患类型'
+                            onChange={(value)=>setOther(value==='其他')}
                             options={
-                                levelFilter==='无风险'&&[{
-                                    value: '完好',
-                                    label: '完好',
-                                }]||
-                                levelFilter==='二级风险'&&[{
-                                value: '破损',
-                                label: '破损',
-                            }]||levelFilter==='三级风险'&&[{
-                                    value: '丢失',
-                                    label: '丢失',
-                                },levelFilter==='三级风险'&&{
-                                    value: '未覆盖',
-                                    label: '未覆盖',
-                                }] ||
-                                levelFilter==='一级风险'&&[{
-                                    value: '井圈问题',
-                                    label: '井圈问题',
-                                }]
+                                levelFilter==='无风险'&&[
+                                    {
+                                        value: '完好',
+                                        label: '完好',
+                                    },
+                                    {
+                                        value: '其他',
+                                        label: '其他'
+                                    }
+
+                                ]||
+                                levelFilter==='二级风险'&&[
+                                    {
+                                        value: '破损',
+                                        label: '破损',
+                                    },
+                                    {
+                                        value: '其他',
+                                        label: '其他'
+                                    }
+                                ]||
+                                levelFilter==='三级风险'&&[
+                                    {
+                                        value: '丢失',
+                                        label: '丢失',
+                                    },
+                                    {
+                                        value: '未覆盖',
+                                        label: '未覆盖',
+                                    },
+                                    {
+                                        value: '其他',
+                                        label: '其他'
+                                    }
+                                ]||
+                                levelFilter==='一级风险'&&[
+                                    {
+                                        value: '井圈问题',
+                                        label: '井圈问题',
+                                    },
+                                    {
+                                        value: '其他',
+                                        label: '其他'
+                                    }]
                             }
                         />
                     </Form.Item>
-                    {/*{ customize && <Form.Item
-                    label="事件名称"
-                    name="name"
+                    { other && <Form.Item
+                    label="其他隐患类型"
+                    name="other"
                     required={true}
+                    wrapperCol={{
+                        span:6
+                    }}
                 >
-                    <Input size='large' placeholder='请填写事件名称'/>
-                </Form.Item>}*/}
+                    <Input placeholder='请填写其他隐患类型'/>
+                </Form.Item>}
                     <ConfigProvider locale={locale}>
                         <Form.Item
                             name='date'
@@ -164,7 +197,7 @@ const Confirm = () => {
                         name="ifUrgent"
                         valuePropName="checked"
                         wrapperCol={{
-                            offset: 8,
+                            offset: 11,
                             span: 16,
                         }}
                     >
@@ -173,7 +206,7 @@ const Confirm = () => {
 
                     <Form.Item
                         wrapperCol={{
-                            offset:6,
+                            offset:4,
                             span: 16,
                         }}
                     >

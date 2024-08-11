@@ -3,7 +3,7 @@ import {Button, Image, Table} from "antd";
 import styles from '../style.module.less'
 import {observer} from "mobx-react";
 import EditorModal from "./EditorModal.jsx";
-import Reason from "@/store/Reason.js";
+import Reason from "@/store/knowledgeBase/Reason.js";
 import DeleteModal from "@/pages/admin/Knowledge/DeleteModal.jsx";
 
 const Index = () => {

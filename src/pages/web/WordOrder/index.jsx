@@ -1,14 +1,14 @@
-import styles from './style.module.less'
-import Content from "./WorkOrderList.jsx"
-import React from 'react'
+import styles from "./style.module.less";
+import Content from "./WorkOrderList.jsx";
+import React from "react";
 
-const Index = ()=>{
+const Index = () => {
     return (
         <div>
             <div className={styles.record_content}>
-                <Content/>
+                <Content />
             </div>
         </div>
-    )
-}
-export default Index
+    );
+};
+export default Index;

@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { Image, Table} from "antd";
 import styles from './style.module.less'
-import News from "@/store/News.js";
+import News from "@/store/knowledgeBase/News.js";
 import {observer} from "mobx-react";
 import EditorModal from "@/pages/admin/Knowledge/News/EditorModal.jsx";
 import DeleteModal from "@/pages/admin/Knowledge/DeleteModal.jsx";

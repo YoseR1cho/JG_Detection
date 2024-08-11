@@ -3,7 +3,7 @@ import {Button, Table, Image, Input} from "antd";
 import styles from './style.module.less'
 import {observer} from "mobx-react";
 import EditorModal from "./EditorModal.jsx";
-import Matter from "@/store/Matter.js";
+import Matter from "@/store/knowledgeBase/Matter.js";
 import DeleteModal from "@/pages/admin/Knowledge/DeleteModal.jsx";
 import {SearchOutlined} from "@ant-design/icons";
 import KeywordSearch from "@/components/KeywordSearch/index.jsx";

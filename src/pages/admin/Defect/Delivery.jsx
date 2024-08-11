@@ -5,7 +5,7 @@ import {observer} from "mobx-react";
 import {useNavigate, useParams} from "react-router-dom";
 import UserList from "@/store/UserList.js";
 import dayjs from "dayjs";
-import Event from '@/store/Event.js'
+import Event from '@/store/knowledgeBase/Event.js'
 
 
 const MyTable = () => {

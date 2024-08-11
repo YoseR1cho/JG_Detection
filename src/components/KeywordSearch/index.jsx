@@ -4,7 +4,6 @@ import {Button, Input} from "antd";
 import {SearchOutlined} from "@ant-design/icons";
 
 const Index = ({load}) => {
-    console.log(load);
     const [filterOpt,setFilterOpt] = useState('');
 
     const searchHandler = ()=>{

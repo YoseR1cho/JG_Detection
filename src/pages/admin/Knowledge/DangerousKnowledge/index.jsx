@@ -9,9 +9,9 @@ import ReasonTable from "@/pages/admin/Knowledge/DangerousKnowledge/Reason/Reaso
 import ProcessTable from '@/pages/admin/Knowledge/DangerousKnowledge/Process/ProcessTable.jsx'
 import ProcessModal from "@/pages/admin/Knowledge/DangerousKnowledge/Process/ProcessModal.jsx";
 import KeywordSearch from "@/components/KeywordSearch/index.jsx";
-import Feature from "@/store/Feature.js";
-import Reason from "@/store/Reason.js";
-import Process from "@/store/Process.js";
+import Feature from "@/store/knowledgeBase/Feature.js";
+import Reason from "@/store/knowledgeBase/Reason.js";
+import Process from "@/store/knowledgeBase/Process.js";
 
 const Index = () => {
     const [status,setStatus] = useState('隐患特征')

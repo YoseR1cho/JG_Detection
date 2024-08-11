@@ -1,6 +1,5 @@
 import React from 'react';
 import { Image } from 'antd';
-import result from '@/assets/display2.jpg'
 import styles from '@/pages/web/Record/style.module.less'
 const App = ({data}) => (
   <div className={styles.picContainer}>

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styles from "./style.module.less";
 import {Button, Form, Image, Input, message, Modal, Upload} from "antd";
-import News from "@/store/News.js";
+import News from "@/store/knowledgeBase/News.js";
 
 const EditorModal = ({isAdd = true,data}) => {
     const [isOpen,setOpen] = useState(false)

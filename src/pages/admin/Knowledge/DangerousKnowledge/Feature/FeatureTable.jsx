@@ -3,7 +3,7 @@ import { Table,Image} from "antd";
 import styles from '../style.module.less'
 import {observer} from "mobx-react";
 import DeleteModal from "@/pages/admin/Knowledge/DeleteModal.jsx";
-import Feature from "@/store/Feature.js";
+import Feature from "@/store/knowledgeBase/Feature.js";
 import FeatureModal from "@/pages/admin/Knowledge/DangerousKnowledge/Feature/FeatureModal.jsx";
 
 const Index = () => {
