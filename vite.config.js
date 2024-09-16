@@ -4,7 +4,8 @@ import path from "path";
 import { viteMockServe } from "vite-plugin-mock";
 import { compression } from "vite-plugin-compression2";
 import { visualizer } from "rollup-plugin-visualizer";
-import viteImagemin from "vite-plugin-imagemin";
+import viteTinypng from "./script/plugins/vite-plugin-tinypng.js";
+// import viteImagemin from "vite-plugin-imagemin";
 const isDevelopment = process.env.NODE_ENV === "development";
 
 // https://vitejs.dev/config/
@@ -29,19 +30,8 @@ export default defineConfig({
             open: true,
             filename: "visualizer.html", // 生成分析图的文件名
         }),
-        viteImagemin({
-            optipng: {
-                optimizationLevel: 7,
-            },
-            mozjpeg: {
-                // jpeg
-                quality: 50, // 压缩质量，范围从0(最差)到100(最佳)。
-            },
-            pngquant: {
-                // png
-                quality: [0.8, 0.9], // Min和max是介于0(最差)到1(最佳)之间的数字，类似于JPEG。达到或超过最高质量所需的最少量的颜色。如果转换导致质量低于最低质量，图像将不会被保存。
-                speed: 4, // 压缩速度，1(强力)到11(最快)
-            },
+        viteTinypng({}),
+        /*  viteImagemin({
             svgo: {
                 plugins: [
                     // svg压缩
@@ -54,11 +44,16 @@ export default defineConfig({
                     },
                 ],
             },
-        }),
+            gifsicle: {
+                optimizationLevel: 7,
+                interlaced: false,
+            },
+        }),*/
     ],
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "./src"),
+            "*": path.resolve(""),
         },
     },
     build: {
